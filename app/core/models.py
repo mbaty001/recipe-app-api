@@ -19,7 +19,7 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-   
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     """User in the system"""
@@ -29,5 +29,5 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
 
     objects = UserManager()
-     
+
     USERNAME_FIELD = 'email'
