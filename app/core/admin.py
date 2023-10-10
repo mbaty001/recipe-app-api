@@ -51,3 +51,4 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Recipe)   # Using default class
+admin.site.register(models.Tag)   # Using default class
